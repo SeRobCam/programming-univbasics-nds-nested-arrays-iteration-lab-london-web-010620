@@ -59,15 +59,11 @@ def total_even_pairs(src)
  
 row_index = 0 
 total = 0
-  while row_index < array_3.count do 
+  while row_index < src.count do 
     element_index = 0
-    src_2 = []
-      
         if src[row_index][0] % 2 == 0 && src[row_index][1] % 2 == 0
-          total += (src[row_index][0] + src[row_index][1])
-        end
-         
-      end 
+        total += (src[row_index][0] + src[row_index][1])
+      end
       row_index += 1
   end
   return total
